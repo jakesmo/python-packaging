@@ -1,0 +1,2 @@
+[build-system]
+requires = ["setuptools", "wheel", "python-dotenv"] # enables non-standard package use in setup.py

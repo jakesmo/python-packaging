@@ -1,0 +1,9 @@
+# sample dev-only packages
+flake8
+black
+
+# setup.py packages used in pyproject.toml
+wheel
+python-dotenv
+
+-e .
