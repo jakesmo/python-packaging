@@ -17,12 +17,16 @@ class Test_A(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
 
+            # set flag
+            cls.wheel_failed=False
+
             # set expected wheel build path
             load_dotenv(test_env_path)
             whl_path = pl.Path(
                 f'dist/{os.getenv("PACKAGE_NAME")}-{os.getenv("VERSION")}-py3-none-any.whl'
             )
 
+            # build wheel
             cls.build_wheel(cls)
 
             # delete the wheel file if it was created

@@ -1,4 +1,4 @@
-from package.subpackage import ClassB
+from package.subpackage import ClassB # import from subpackage
 
 class ClassA():
 

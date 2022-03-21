@@ -1,4 +1,4 @@
-from . import Spinner
+from package import Spinner # import from parent package
 import time
 import sys
 
